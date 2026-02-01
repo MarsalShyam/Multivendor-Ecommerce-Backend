@@ -48,7 +48,7 @@ public class Order {
 
     private int totalItem;
 
-    private PaymentStatus paymentStatus;
+    private PaymentStatus paymentStatus=PaymentStatus.PENDING;
 
     private LocalDateTime orderDate=LocalDateTime.now();
 
