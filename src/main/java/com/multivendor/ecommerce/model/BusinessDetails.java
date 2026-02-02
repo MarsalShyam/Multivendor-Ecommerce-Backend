@@ -1,8 +1,10 @@
 package com.multivendor.ecommerce.model;
 
+import jakarta.persistence.Embeddable;
 import lombok.Data;
 
 @Data
+@Embeddable
 public class BusinessDetails {
     private String businessName;
     private String businessEmail;

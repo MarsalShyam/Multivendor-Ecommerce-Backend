@@ -1,9 +1,11 @@
 package com.multivendor.ecommerce.model;
 
 import com.multivendor.ecommerce.domain.PaymentStatus;
+import jakarta.persistence.Embeddable;
 import lombok.Data;
 
 @Data
+@Embeddable
 public class PaymentDetails {
     private String PaymentId;
     private String razorpayPaymentLinkId;

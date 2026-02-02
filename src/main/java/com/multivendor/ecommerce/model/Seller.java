@@ -2,10 +2,7 @@ package com.multivendor.ecommerce.model;
 
 import com.multivendor.ecommerce.domain.AccountStatus;
 import com.multivendor.ecommerce.domain.USER_ROLE;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -23,14 +20,18 @@ public class Seller {
 
     private String mobile;
 
+    @Column(unique = true, nullable = false)
     private String email;
 
     private String password;
 
+    @Embedded
     private BusinessDetails businessDetails=new BusinessDetails();
 
+    @Embedded
     private BankDetails bankDetails=new BankDetails();
 
+    @OneToOne(cascade = CascadeType.ALL)
     private Address pickupAddress=new Address();
 
     private String GSTIN;
