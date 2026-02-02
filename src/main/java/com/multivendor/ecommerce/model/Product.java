@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode
+//@EqualsAndHashCode
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

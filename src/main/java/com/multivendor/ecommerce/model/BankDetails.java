@@ -1,5 +1,6 @@
 package com.multivendor.ecommerce.model;
 
+import jakarta.persistence.Embedded;
 import lombok.Data;
 
 @Data

@@ -28,11 +28,11 @@ public class Review {
     private List<String> productImages=new ArrayList<>();
 
     @ManyToOne
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private Product product;
 
     @ManyToOne
-    @Column(nullable = false)
+//    @Column(nullable = false)
     private User user;
 
     @Column(nullable = false)
